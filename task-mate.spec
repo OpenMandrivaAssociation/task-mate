@@ -43,7 +43,7 @@ Suggests:	mate-netbook >= %{version}
 This package is a meta-package, meaning that its purpose is to contain
 dependencies for running the MATE.
 
-%files minimal
+%files
 
 #---------------------------------------------------------------------------
 
