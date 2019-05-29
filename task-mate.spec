@@ -1,39 +1,54 @@
 Summary:	Metapackage for MATE desktop environment
 Name:		task-mate
-Version:	1.14.0
-Release:	1
+Version:	1.20.0
+Release:	2
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 BuildArch:	noarch
 
+# mate core
 Requires:	%{name}-minimal >= %{version}
-Requires:	atril >= %{version}
 Requires:	mate-applets >= %{version}
-Requires:	dconf-editor
-Requires:	engrampa >= %{version}
-Requires:	eom >= %{version}
+Requires:	mate-calc >= %{version}
+Requires:	mate-common >= %{version}
+Requires:	mate-desktop >= %{version}
+Requires:	mate-icon-theme-faenza >= %{version}
 Requires:	mate-indicator-applet >= %{version}
-Requires:	gnome-keyring >= %{version}
 Requires:	mate-media >= %{version}
-Requires:	matemixer-backend-pulse >= %{version}
+Requires:	mate-menus >= %{version}
 Requires:	mate-screensaver >= %{version}
 Requires:	mate-sensors-applet >= %{version}
 Requires:	mate-system-monitor >= %{version}
-Requires:	pluma >= %{version}
 Requires:	mate-terminal >= %{version}
+Requires:	mate-user-share >= %{version}
 Requires:	mate-utils >= %{version}
 Requires:	mozo >= %{version}
-Requires:	lightdm-gtk3-greeter
+# MATE theme
+Requires:	mate-themes
+# MATE apps
+Requires:	atril
+Requires:	caja
+Requires:	engrampa
+Requires:	eom
+Requires:	pluma
+# other useful apps
+#Requires:	gnome-keyring >= %{version}
 Requires:	lightdm
-#Suggests:	mate-file-manager-sendto-pidgin >= %{version}
-#Suggests:	mate-file-manager-sendto-upnpl >= %{version}
+Requires:	lightdm-gtk3-greeter
+# optional
+Suggests:	mate-user-guide >= %{version}
+Suggests:	mate-netbook >= %{version}
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
 dependencies for running the MATE.
 
+%files minimal
+
+#---------------------------------------------------------------------------
+
 %package minimal
-Summary:	Minimal dependencies needed for MATE desktop 
+Summary:	Minimal dependencies needed for MATE desktop
 Group:		Graphical desktop/GNOME
 
 Requires:	caja >= %{version}
@@ -57,7 +72,4 @@ Requires:	libwnck3
 This package is a meta-package, meaning that its purpose is to contain
 minimal dependencies for running a minimal MATE desktop environment.
 
-%files
-
 %files minimal
-
