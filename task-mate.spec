@@ -7,22 +7,22 @@ License:	GPLv2+
 BuildArch:	noarch
 
 # mate core
-Requires:	%{name}-minimal >= %{version}
-Requires:	mate-applets >= %{version}
-Requires:	mate-calc >= %{version}
-Requires:	mate-common >= %{version}
-Requires:	mate-desktop >= %{version}
-Requires:	mate-icon-theme-faenza >= %{version}
-Requires:	mate-indicator-applet >= %{version}
-Requires:	mate-media >= %{version}
-Requires:	mate-menus >= %{version}
-Requires:	mate-screensaver >= %{version}
-Requires:	mate-sensors-applet >= %{version}
-Requires:	mate-system-monitor >= %{version}
-Requires:	mate-terminal >= %{version}
-Requires:	mate-user-share >= %{version}
-Requires:	mate-utils >= %{version}
-Requires:	mozo >= %{version}
+Requires:	%{name}-minimal
+Requires:	mate-applets
+Requires:	mate-calc
+Requires:	mate-common
+Requires:	mate-desktop
+Requires:	mate-icon-theme-faenza
+Requires:	mate-indicator-applet
+Requires:	mate-media
+Requires:	mate-menus
+Requires:	mate-screensaver
+Requires:	mate-sensors-applet
+Requires:	mate-system-monitor
+Requires:	mate-terminal
+Requires:	mate-user-share
+Requires:	mate-utils
+Requires:	mozo
 # MATE theme
 Requires:	mate-themes
 # MATE apps
@@ -32,12 +32,12 @@ Requires:	engrampa
 Requires:	eom
 Requires:	pluma
 # other useful apps
-#Requires:	gnome-keyring >= %{version}
+#Requires:	gnome-keyring
 Requires:	lightdm
 Requires:	lightdm-gtk3-greeter
 # optional
-Suggests:	mate-user-guide >= %{version}
-Suggests:	mate-netbook >= %{version}
+Suggests:	mate-user-guide
+Suggests:	mate-netbook
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
@@ -51,18 +51,18 @@ dependencies for running the MATE.
 Summary:	Minimal dependencies needed for MATE desktop
 Group:		Graphical desktop/GNOME
 
-Requires:	caja >= %{version}
+Requires:	caja
 # MD mate made the switch, this really should be pulled by each pkg contains gschemas
 Requires:	gsettings-desktop-schemas
-Requires:	mate-backgrounds >= %{version}
-Requires:	mate-control-center >= %{version}
-Requires:	mate-icon-theme >= %{version}
-Requires:	mate-notification-daemon >= %{version}
-Requires:	mate-panel >= %{version}
-Requires:	mate-polkit >= %{version}
-Requires:	mate-power-manager >= %{version}
-Requires:	mate-session-manager >= %{version}
-Requires:	marco >= %{version}
+Requires:	mate-backgrounds
+Requires:	mate-control-center
+Requires:	mate-icon-theme
+Requires:	mate-notification-daemon
+Requires:	mate-panel
+Requires:	mate-polkit
+Requires:	mate-power-manager
+Requires:	mate-session-manager
+Requires:	marco
 Requires:	preload
 Requires:	task-pulseaudio
 Requires:	task-x11
