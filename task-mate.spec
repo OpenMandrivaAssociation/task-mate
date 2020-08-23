@@ -1,6 +1,6 @@
 Summary:	Metapackage for MATE desktop environment
 Name:		task-mate
-Version:	1.22.2
+Version:	1.24.1
 Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
@@ -36,8 +36,8 @@ Requires:	pluma
 Requires:	lightdm
 Requires:	lightdm-gtk3-greeter
 # optional
-Suggests:	mate-user-guide
-Suggests:	mate-netbook
+Recommends:	mate-user-guide
+Recommends:	mate-netbook
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
