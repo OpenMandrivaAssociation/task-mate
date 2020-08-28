@@ -1,7 +1,7 @@
 Summary:	Metapackage for MATE desktop environment
 Name:		task-mate
 Version:	1.24.1
-Release:	1
+Release:	2
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 BuildArch:	noarch
@@ -67,6 +67,7 @@ Requires:	preload
 Requires:	task-pulseaudio
 Requires:	task-x11
 Requires:	libwnck3
+Requires: networkmanager-applet
 
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain
