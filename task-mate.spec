@@ -1,7 +1,7 @@
 Summary:	Metapackage for MATE desktop environment
 Name:		task-mate
 Version:	1.26.0
-Release:	2
+Release:	3
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 BuildArch:	noarch
@@ -33,6 +33,7 @@ Requires:	eom
 Requires:	pluma
 # other useful apps
 #Requires:	gnome-keyring
+Requires: libmateweather
 Requires:	lightdm
 Requires:	lightdm-gtk3-greeter
 # optional
