@@ -1,7 +1,7 @@
 Summary:	Metapackage for MATE desktop environment
 Name:		task-mate
-Version:	1.26.0
-Release:	3
+Version:	1.28.0
+Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 BuildArch:	noarch
@@ -12,7 +12,6 @@ Requires:	mate-applets
 Requires:	mate-calc
 Requires:	mate-common
 Requires:	mate-desktop
-Requires:	mate-icon-theme-faenza
 Requires:	mate-indicator-applet
 Requires:	mate-media
 Requires:	mate-menus
@@ -25,6 +24,7 @@ Requires:	mate-utils
 Requires:	mozo
 # MATE theme
 Requires:	mate-themes
+Requires:	mate-icon-theme-faenza
 # MATE apps
 Requires:	atril
 Requires:	caja
@@ -33,7 +33,7 @@ Requires:	eom
 Requires:	pluma
 # other useful apps
 #Requires:	gnome-keyring
-Requires: libmateweather
+Requires:	libmateweather
 Requires:	lightdm
 Requires:	lightdm-gtk3-greeter
 # optional
@@ -75,3 +75,4 @@ This package is a meta-package, meaning that its purpose is to contain
 minimal dependencies for running a minimal MATE desktop environment.
 
 %files minimal
+
